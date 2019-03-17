@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="font/stylesheet.css">
+	<link rel="stylesheet" href="font/HelveticaNeueCyr/stylesheet.css">
+	<title>Яндекс Справочник</title>
+</head>
+<body>
+	<header class="main-header">
+		<a href="#" class="main-header__logo"><span class="main-header__logo--bold"><span class="main-header__logo--red">Я</span>ндекс</span> Справочник</a>
+		<form class="main-header__search-form">
+			<input type="search" name="search" placeholder="Название, телефон, сайт">
+			<button type="submit" class="button">Найти</button>
+		</form>
+		<a href="#" class="main-header__user"><img class="main-header__user-photo" src="img/user.jpg" width="44" height="44"></a>
+	</header>
+	<main>
+		<nav class="main-nav">
+			<div class="container">
+				<ul class="main-nav__list">
+					<li><a class="main-nav__link active" href="#">Мои организации</a></li>
+					<li><a class="main-nav__link" href="#">Заявки на изменения</a></li>
+					<li><a class="main-nav__link" href="#">Мои заказы</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section class="organisations">
+			<div class="container">
+				<div class="organisations__item">
+					<header class="organisation__header">
+						<h2 class="organisation__title">Кафе Гладиатор</h2>
+						<a href="#" class="organisation__map-link">Страница на Картах</a>
+					</header>
+					<nav class="organisation__nav">
+						<ul class="organisation__nav-list">
+							<li><a class="organisation__nav-link button" href="#">Информация</a></li>
+							<li><a class="organisation__nav-link button" href="#">Услуги</a></li>
+							<li><a class="organisation__nav-link button" href="#">Фото</a></li>
+							<li><a class="organisation__nav-link active button" href="#">Отзывы</a></li>
+							<li><a class="organisation__nav-link button" href="#">Статистика</a></li>
+						</ul>
+					</nav>
+					<section class="reviews">
+						<h3 class="reviews__title">12 отзывов об организации <span class="reviews__rating-sum">9.8</span></h3>
+						<ul class="reviews__list">
+							<li>
+								<div class="review">
+									<header class="review__header">
+										<a href="#" class="review__author-link">
+											<img class="review__author-photo" src="img/author1.jpg" width="33" height="33">
+											<p class="review__author-name">Василий Привалов</p>
+										</a>
+										<time class="review__time">4 апреля 2016</time>
+										<p class="review__rating thumbup">оценка:</p>
+									</header>
+									<blockquote class="review__blockquote">Очень давно знаю это место буквально со дня открытия и для нашей семьи в особенности ребенка, оно стало самым любимым. Здесь рай не только для взрослых по части вкусной итальянской кухни и романтики <a href="#">читать полностью</a></blockquote>
+									<nav class="review__nav">
+										<button href="#" class="reply__button button review__button">Ответить</button>
+										<button href="#" class="button review__button">Пожаловаться</button>
+										<a href="#" class="review__link">Ссылка на отзыв</a>
+									</nav>
+									<form class="review__reply reply-form">
+										<h3 class="reply-form__title">Напишите ответ на отзыв</h3>
+										<textarea class="reply-form__text"></textarea>
+										<input value="Опубликовать" type="submit" class="button reply-form__button">
+									</form>
+								</div>
+							</li>
+							<li>
+								<div class="review">
+									<header class="review__header">
+										<a href="#" class="review__author-link">
+											<img class="review__author-photo" src="img/author2.jpg" width="33" height="33">
+											<p class="review__author-name">Илья Пряников</p>
+										</a>
+										<time class="review__time">9 мая 2016</time>
+										<p class="review__rating thumbup">оценка:</p>
+									</header>
+									<blockquote class="review__blockquote">Удивительное, хорошее место. Кухня на высоте. Интерьер крайне приятный, играет рояль каждый раз и для деток проводят мастер-классы. На радость родителям — бесплатно!</blockquote>
+									<nav class="review__nav">
+										<button href="#" class="reply__button button review__button">Ответить</button>
+										<button href="#" class="button review__button">Пожаловаться</button>
+										<a href="#" class="review__link">Ссылка на отзыв</a>
+									</nav>
+									<form class="review__reply reply-form">
+										<h3 class="reply-form__title">Напишите ответ на отзыв</h3>
+										<textarea class="reply-form__text"></textarea>
+										<input value="Опубликовать" type="submit" class="button reply-form__button">
+									</form>
+								</div>
+							</li>
+							<li>
+								<div class="review">
+									<header class="review__header">
+										<a href="#" class="review__author-link">
+											<img class="review__author-photo" src="img/author3.jpg" width="33" height="33">
+											<p class="review__author-name">Лидия Никарагуа</p>
+										</a>
+										<time class="review__time">23 октября 2016</time>
+										<p class="review__rating thumbdown">оценка:</p>
+									</header>
+									<blockquote class="review__blockquote">Не понравилось. На Белорусской и Пролетарской как то поуютнее,обстановка поприятнее. Маленький выбор пива, а цена на него большая. Лёффе 0.33 290р!!! Не очень понравилась еда. Брали фирменные бургеры.Мясо было пересоленное и переперченное. Плюс какое то слишком жирное. В итоге, просуммировав все, считаю, что при нынешнем уровне качества заведения цены на еду и напитки должны быть ниже.</blockquote>
+									<nav class="review__nav">
+										<button href="#" class="reply__button button review__button">Ответить</button>
+										<button href="#" class="button review__button">Пожаловаться</button>
+										<a href="#" class="review__link">Ссылка на отзыв</a>
+									</nav>
+									<form class="review__reply reply-form">
+										<h3 class="reply-form__title">Напишите ответ на отзыв</h3>
+										<textarea class="reply-form__text"></textarea>
+										<input value="Опубликовать" type="submit" class="button reply-form__button">
+									</form>
+								</div>
+							</li>
+						</ul>
+						<button class="button reviews__all">Все 134 отзыва</button>
+					</section>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
