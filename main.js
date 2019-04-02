@@ -31,9 +31,7 @@ function organisationLinkShow(i){
 	});
 }
 
-for(var j = 0; j < replyButtonList.length; j++){
-	showReply(j);
-}
+replyButtonList.forEach((item, index) => showReply(index));
 
 function showReply(i){
 	replyButtonList[i].addEventListener('click', function(evt){
@@ -48,3 +46,21 @@ function showReply(i){
 		}
 	});
 }
+
+for(var j = 0; j < replyFormList.length; j++){
+	clearText(j);
+}
+
+function clearText(i){
+	replyFormList[i].addEventListener('click', function(evt){
+		evt.preventDefault();
+		if(!evt.target.classList.contains('reply-form__clear')){
+			return;
+		};
+		this.querySelector('.reply-form__text').value = '';
+	});
+}
+
+
+
+
