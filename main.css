@@ -10,7 +10,7 @@ body{
 	padding: 0 10px;
 }
 
-@media (max-width: 1120px){
+@media (max-width: 960px){
 	.container{
 		margin: 0 auto;
 	}
@@ -400,8 +400,9 @@ body{
 }
 
 .reviews__all{
-	width: 100%;
-	padding: 10px;
+	padding: 11px;
+	padding-left: 189px;
+	padding-right: 168px;
 	font-size: 15px;
 	background-color: #f2f1ed;
 	border-color: #f2f1ed;
