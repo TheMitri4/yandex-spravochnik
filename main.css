@@ -239,30 +239,32 @@ body{
 .reviews__title{
 	font-size: 24px;
 	font-weight: 300;
-	margin-top: 26px;
+	margin-top: 27px;
 	margin-left: 2px;
-	margin-bottom: 18px;
+	margin-bottom: 23px;
+	position: relative;
 }
 
 .reviews__rating-sum{
 	display: inline-block;
 	background-color: #fecd00;
-	font-size: 21px;
-    padding: 5px 10px;
+	font-size: 15px;
+    padding: 4px 7px;
 	padding-right: 5px;
-	margin-left: 15px;
-	position: relative;
+	margin-left: 21px;
+	position: absolute;
+	top: 2px;
 }
 
 .reviews__rating-sum::after{
 	content: '';
     display: block;
     position: absolute;
-    border-top: 17px solid transparent;
-    border-left: 13px solid #fecd00;
+    border-top: 13px solid transparent;
+    border-left: 8px solid #fecd00;
     top: 0;
-    border-bottom: 16px solid transparent;
-    right: -13px;
+    border-bottom: 12px solid transparent;
+    right: -8px;
 }
 
 .reviews__list{
@@ -395,8 +397,8 @@ body{
 
 .reviews__all{
 	width: 100%;
-	padding: 14px;
-	font-size: 16px;
+	padding: 10px;
+	font-size: 15px;
 	background-color: #f2f1ed;
 	border-color: #f2f1ed;
 	margin-bottom: 100px;
