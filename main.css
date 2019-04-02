@@ -1,15 +1,16 @@
 body{
 	margin: 10px;
 	font-family: 'HelveticaNeue' , Arial, sans-serif;
+	font-size: 13px;
 }
 
 .container{
-	max-width: 660px;
-	margin-left: 220px;
+	max-width: 495px;
+	margin-left: 214px;
 	padding: 0 10px;
 }
 
-@media (max-width: 920px){
+@media (max-width: 1120px){
 	.container{
 		margin: 0 auto;
 	}
@@ -32,7 +33,7 @@ body{
 
 .main-header{
 	display: flex;
-	height: 76px;
+	height: 74px;
 	border: 1px solid #e1e1e1;
 	align-items: center;
 	border-bottom: 0;
@@ -62,7 +63,7 @@ body{
 
 .main-header__search-form{
 	display: flex;
-	width: 465px;
+	width: 458px;
 	margin-right: 20px;
 }
 
@@ -70,8 +71,9 @@ body{
 	width: 100%;
 	border: 1px solid #e1e1e1;
     border-radius: 3px 0 0 3px;
-	padding: 6px 13px;
-	font-size: 16px;
+	padding: 8px 13px;
+	padding-top: 5px;
+	font-size: 15px;
 }
 
 .main-header__search-form input:hover{
@@ -102,9 +104,10 @@ body{
 
 .main-header__search-form button{
 	border-radius: 0 3px 3px 0;
-	padding: 6px 15px;
+	padding: 8px 13px;
+	padding-top: 5px;
 	border-left: 1px solid transparent;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .main-header__search-form button:hover{
@@ -142,7 +145,7 @@ body{
 	color: #000;
 	display: block;
 	padding-top: 20px;
-	padding-bottom: 22px;
+	padding-bottom: 20px;
 	border-bottom: 2px solid transparent;
 }
 
@@ -160,14 +163,17 @@ body{
 
 .organisation__header{
 	display: flex;
-	align-items: baseline;
+	padding-top: 23px;
 }
 
 .organisation__title{
-	font-size: 34px;
+	font-size: 36px;
+	margin: 0;
 	margin-right: 10px;
+	margin-bottom: 26px;
 	font-weight: 300;
 	font-family: Arial, sans-serif;
+	letter-spacing: -0.01em;
 }
 
 .organisation__map-link{
@@ -175,6 +181,7 @@ body{
 	padding-left: 13px;
 	position: relative;
 	color: rgba(66, 123, 216, 1);
+	margin-top: 19px;
 }
 
 .organisation__map-link:hover{
@@ -187,7 +194,8 @@ body{
 	width: 18px;
 	height: 18px;
 	background-image: url(img/maps.svg);
-	left: -5px;
+	top: -2px;
+	left: -4px;
 }
 
 .organisation__nav-list{
@@ -204,13 +212,13 @@ body{
 .organisation__nav-link{
 	text-decoration: none;
 	color: #000;
-	padding-left: 19px;
-	padding-right: 19px;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 5px;
+	padding-bottom: 6px;
 	border-right: 1px solid transparent;
 	border-radius: 0;
-	transition: all 0.3s;
+	transition: padding 0.3s , background 0.3s;
 }
 
 .organisation__nav li:last-child a{
@@ -224,13 +232,16 @@ body{
 
 .organisation__nav-link.active{
 	background-color: #feeaa2;
-	padding-left: 28px;
-	padding-right: 28px;
+	padding-left: 29px;
+	padding-right: 29px;
 }
 
 .reviews__title{
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 300;
+	margin-top: 26px;
+	margin-left: 2px;
+	margin-bottom: 18px;
 }
 
 .reviews__rating-sum{
@@ -261,7 +272,9 @@ body{
 }
 
 .review{
-	margin-bottom: 26px;
+	margin-bottom: 24px;
+	margin-left: 4px;
+	letter-spacing: -0.01em;
 }
 
 .review__header{
@@ -337,8 +350,8 @@ body{
 .review__blockquote{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 12px;
-	line-height: 21px;
+	margin-bottom: 9px;
+	line-height: 18px;
 }
 
 .review__blockquote a{
@@ -359,12 +372,12 @@ body{
 .review__button{
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 6px;
+	padding-bottom: 5px;
 	padding-top: 4px;
 	text-decoration: none;
 	color: #000;
 	margin-right: 20px;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .reply__button.active{
@@ -399,7 +412,7 @@ body{
 }
 
 .reply-form__title{
-	font-size: 16px;
+	font-size: 13px;
 	margin-top: 13px;
 	margin-bottom: 7px;
 }
@@ -448,11 +461,13 @@ body{
 }
 
 .reply-form__button{
-	padding: 8px 22px;
+	padding: 7px 21px;
+	padding-right: 18px;
 	background-color: #ededed;
 	border-color: #ededed;
-	font-size: 16px;
+	font-size: 13px;
 	margin-left: auto;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 
